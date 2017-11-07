@@ -14,6 +14,9 @@
     <ProjectReference Include="..\AsepriteSharp\AsepriteSharp.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TestData\FullExport.json" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 </Project>

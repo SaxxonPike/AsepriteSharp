@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.IO;
+using NUnit.Framework;
 using Ploeh.AutoFixture;
 
 namespace AsepriteSharp.Test
@@ -8,10 +9,19 @@ namespace AsepriteSharp.Test
         protected Fixture Factory { get; private set; }
 
         [SetUp]
-        public void SetupAutoFixture()
+        public void __SetupAutoFixture()
         {
             Factory = new Fixture();
             new SupportMutableValueTypesCustomization().Customize(Factory);
+        }
+
+        public string GetTextData(string name)
+        {
+            using (var stream = GetType().Assembly.GetManifestResourceStream($"AsepriteSharp.Test.TestData.{name}"))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }            
         }
     }
 
@@ -20,6 +30,11 @@ namespace AsepriteSharp.Test
         protected TSubject Subject { get; private set; }
 
         [SetUp]
+        public void __SetupTestSubject()
+        {
+            Subject = GetTestSubject();
+        }
+        
         public abstract TSubject GetTestSubject();
     }
 }
