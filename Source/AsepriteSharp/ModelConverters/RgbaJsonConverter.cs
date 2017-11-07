@@ -2,7 +2,7 @@
 using AsepriteSharp.Models;
 using Newtonsoft.Json;
 
-namespace AsepriteSharp.Converters
+namespace AsepriteSharp.ModelConverters
 {
     /// <inheritdoc />
     /// <summary>

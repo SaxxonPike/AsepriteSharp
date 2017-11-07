@@ -1,4 +1,4 @@
-﻿using AsepriteSharp.Converters;
+﻿using AsepriteSharp.ModelConverters;
 using Newtonsoft.Json;
 
 namespace AsepriteSharp.Models

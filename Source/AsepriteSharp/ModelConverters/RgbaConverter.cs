@@ -2,7 +2,7 @@
 using System.Globalization;
 using AsepriteSharp.Models;
 
-namespace AsepriteSharp.Converters
+namespace AsepriteSharp.ModelConverters
 {
     /// <summary>
     /// Handles conversion of RGB(A) strings.
