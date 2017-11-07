@@ -5,7 +5,14 @@ Definitely check that project out to get a feel for one of the best pixel art pr
 
 ### Usage
 
-Work in progress. Stay tuned...
+```c#
+var json = File.ReadAllText("path.to.json");
+var converter = new SheetConverter();
+var sheet = converter.Decode(json);
+```
+
+Now you can access the `sheet` object by using such things as `sheet.Meta.App` or `sheet.Frames.First().FileName`.
+Go nuts.
 
 ### License
 
