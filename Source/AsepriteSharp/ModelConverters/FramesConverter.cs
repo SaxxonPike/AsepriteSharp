@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using AsepriteSharp.Models;
 
 namespace AsepriteSharp.ModelConverters
@@ -21,7 +20,7 @@ namespace AsepriteSharp.ModelConverters
             
             foreach (var frame in hashtable)
                 frame.Value.FileName = frame.Key;
-            return hashtable.Values.ToList();
+            return new List<Frame>(hashtable.Values);
         }
     }
 }

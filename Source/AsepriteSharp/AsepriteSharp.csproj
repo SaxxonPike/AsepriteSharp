@@ -1,6 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net45</TargetFrameworks>
+    <TargetFrameworks>net20;net40;netstandard1.0</TargetFrameworks>
+    <PackageId>AsepriteSharp</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Tony Konzel</Authors>
+    <Description>Provides an interface to sprite definitions exported from Aseprite</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>2017 Tony Konzel</Copyright>
+    <PackageTags>json aseprite</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="11.1.0" />
