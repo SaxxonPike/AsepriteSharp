@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using JetBrains.Annotations;
 
 namespace AsepriteSharp.Models
 {
-    [UsedImplicitly(ImplicitUseTargetFlags.Members)]
     public static class Directions
     {
         public static readonly string Forward = "forward";

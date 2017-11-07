@@ -1,11 +1,9 @@
 ﻿using AsepriteSharp.Models;
-using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 namespace AsepriteSharp
 {
     /// <inheritdoc />
-    [UsedImplicitly(ImplicitUseTargetFlags.Members)]
     public class SheetConverter : ISheetConverter
     {
         public Sheet Decode(string json)

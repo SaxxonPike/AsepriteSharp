@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using JetBrains.Annotations;
 
 namespace AsepriteSharp.Models
 {
-    [UsedImplicitly(ImplicitUseTargetFlags.Members)]
     public static class BlendModes
     {
         public static readonly string Normal = "normal";
